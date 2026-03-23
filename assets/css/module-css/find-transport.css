@@ -1,0 +1,157 @@
+/*==============================================
+    Find Transpot
+===============================================*/
+.find-transport {
+    position: relative;
+    display: block;
+    background-color: var(--tanspot-base);
+    z-index: 1;
+}
+
+.find-transport__shape-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .10;
+    z-index: -1;
+}
+
+.find-transport__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px 0 84px;
+}
+
+.find-transport__title-box {
+    position: relative;
+    display: block;
+}
+
+.find-transport__title {
+    font-size: 50px;
+    color: var(--tanspot-white);
+    line-height: 1.3em;
+    font-weight: 700;
+}
+
+.find-transport__btn-and-call {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.find-transport__btn-box {
+    position: relative;
+    display: block;
+}
+
+.find-transport__btn-box .thm-btn {
+    background-color: var(--tanspot-black);
+}
+
+.find-transport__btn-box .thm-btn>span {
+    background-color: var(--tanspot-white);
+    color: var(--tanspot-base);
+}
+
+.find-transport__btn-box .thm-btn::before,
+.find-transport__btn-box .thm-btn::after {
+    background-color: var(--tanspot-white);
+}
+
+.find-transport__btn-box .thm-btn:hover {
+    color: var(--tanspot-base);
+}
+
+.find-transport__btn-box .thm-btn:hover>span {
+    background-color: var(--tanspot-black);
+    color: var(--tanspot-white);
+}
+
+.find-transport__call-us {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.find-transport__call-us .icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--tanspot-white);
+    border-radius: 50%;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.find-transport__call-us .icon:hover {
+    background-color: var(--tanspot-black);
+}
+
+.find-transport__call-us .icon>span {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: var(--tanspot-base);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.find-transport__call-us .icon:hover span {
+    color: var(--tanspot-white);
+}
+
+.find-transport__call-us .content {
+    position: relative;
+    display: block;
+    margin-left: 15px;
+}
+
+.find-transport__call-us .content>span {
+    color: var(--tanspot-white);
+}
+
+.find-transport__call-us .content>p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: var(--tanspot-font-two);
+}
+
+.find-transport__call-us .content>p>a {
+    color: var(--tanspot-white);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.find-transport__call-us .content>p>a:hover {
+    color: var(--tanspot-black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*==============================================
+    End
+===============================================*/

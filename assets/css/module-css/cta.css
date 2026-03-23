@@ -1,0 +1,130 @@
+/***
+=============================================
+Cta One
+=============================================
+***/
+.cta-one {
+    position: relative;
+    display: block;
+    padding: 168px 0 120px;
+    z-index: 1;
+}
+
+.cta-one::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 350px;
+    background: var(--tanspot-primary);
+    content: "";
+    z-index: -1;
+}
+
+.cta-one__inner {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.cta-one__img {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    animation: leftRight 4s ease-in-out infinite;
+    z-index: 2;
+}
+
+.cta-one__content {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: var(--tanspot-black);
+    padding: 67px 95px 80px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.cta-one__shape-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 426px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.cta-one__shape-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .15;
+    z-index: -1;
+}
+
+.cta-one__shape-2 {
+    position: absolute;
+    top: 0;
+    right: 185px;
+    opacity: .20;
+    z-index: -1;
+}
+
+.cta-one__shape-2 img {
+    width: auto;
+}
+
+.cta-one__shape-3 {
+    position: absolute;
+    bottom: 60px;
+    left: 580px;
+    z-index: -1;
+}
+
+.cta-one__shape-3 img {
+    width: auto;
+}
+
+.cta-one__content h2 {
+    color: var(--tanspot-white);
+    font-size: 45px;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.cta-one__content h2 span {
+    color: var(--tanspot-base);
+}
+
+.cta-one__content p {
+    color: var(--tanspot-white);
+}
+
+.cta-one__btn-box {
+    position: relative;
+    display: block;
+    margin-top: 37px;
+}
+
+.cta-one__btn-box .thm-btn::before,
+.cta-one__btn-box .thm-btn::after {
+    background-color: var(--tanspot-white);
+}
+
+.cta-one__btn-box .thm-btn:hover {
+    color: var(--tanspot-base);
+}
+
+.cta-one__btn-box .thm-btn:hover>span {
+    background-color: var(--tanspot-base);
+    color: var(--tanspot-white);
+}

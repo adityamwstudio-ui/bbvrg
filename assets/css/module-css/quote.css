@@ -1,0 +1,365 @@
+/***
+=============================================
+Quote One
+=============================================
+***/
+.quote-one {
+    position: relative;
+    display: block;
+    background: var(--tanspot-base);
+    padding: 120px 0px 120px;
+    z-index: 1;
+}
+
+.quote-one::before {
+    position: absolute;
+    top: 650px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(var(--tanspot-white-rgb), 1);
+    content: "";
+}
+
+.quote-one-shape__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: .10;
+    z-index: -1;
+}
+
+.quote-one .section-title__tagline-border {
+    border: 1px dashed var(--tanspot-white);
+}
+
+.quote-one .section-title__shape-1>i,
+.quote-one .section-title__shape-2>i,
+.quote-one .section-title__tagline,
+.quote-one .section-title__title {
+    color: var(--tanspot-white);
+}
+
+.quote-one .section-title__title span {
+    color: var(--tanspot-black);
+}
+
+.quote-one .quote-tab {
+    position: relative;
+    display: block;
+    background: var(--tanspot-black);
+    padding: 60px 60px 60px;
+    border-radius: 20px;
+}
+
+.quote-tab__button {
+    position: relative;
+    display: block;
+    margin-bottom: 41px;
+    z-index: 1;
+}
+
+.quote-tab__button ul {
+    display: flex;
+    gap: 15px;
+}
+
+.quote-tab__button ul li {
+    border-radius: 5px;
+}
+
+.quote-tab__button .tabs-button-box {
+    position: relative;
+}
+
+.quote-tab__button .tabs-button-box .tab-btn-item {
+    position: relative;
+    display: block;
+    width: 190px;
+    background-color: var(--tanspot-white);
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+    z-index: 1;
+}
+
+.quote-tab__button .tabs-button-box .tab-btn-item.active-btn-item,
+.quote-tab__button .tabs-button-box .tab-btn-item:hover {
+    background-color: var(--tanspot-base);
+}
+
+.quote-tab__button-inner {
+    position: relative;
+    display: block;
+}
+
+.quote-tab__button-inner h3 {
+    position: relative;
+    display: block;
+    padding: 15px 0;
+    color: var(--tanspot-black);
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 600;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.quote-tab__button .tabs-button-box .active-btn-item .quote-tab__button-inner h3 {
+    color: var(--tanspot-white);
+}
+
+.quote-tab__button .tabs-button-box .tab-btn-item:hover .quote-tab__button-inner h3,
+.quote-tab__button .tabs-button-box .tab-btn-item.active-btn-item .quote-tab__button-inner h3 {
+    color: var(--tanspot-white);
+}
+
+.tabs-content-box {
+    position: relative;
+    display: block;
+}
+
+.quote-one .tab-content-box-item {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    visibility: hidden;
+}
+
+.quote-one .tab-content-box-item.tab-content-box-item-active {
+    position: relative;
+    visibility: visible;
+    z-index: 5;
+}
+
+.quote-one .tab-content-box-item .quote-tab-content-box-item {
+    transition: all 0.7s ease;
+    opacity: 0;
+    transform: scaleY(0.9);
+    transform-origin: top bottom;
+}
+
+.quote-one .tab-content-box-item.tab-content-box-item-active .quote-tab-content-box-item {
+    opacity: 1.0;
+    transform: scaleY(1);
+    transform-origin: bottom top;
+}
+
+.tab-content-box-item-img {
+    position: absolute;
+    top: -161px;
+    right: -60px;
+    bottom: -60px;
+    width: 390px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.quote-tab-content-box-item .quotes-wrapper {
+    position: relative;
+    display: block;
+    max-width: 810px;
+    width: 100%;
+}
+
+.quote-tab-content-box-item .quotes-wrapper-inner {
+    position: relative;
+    display: block;
+}
+
+.quote-tab-content-box-item .quotes-wrapper-inner .title-box {
+    position: relative;
+    display: block;
+    margin-bottom: 39px;
+}
+
+.quote-tab-content-box-item .quotes-wrapper-inner .title-box h2 {
+    color: var(--tanspot-white);
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.quote-one__form {
+    position: relative;
+    display: block;
+}
+
+.quote-one__form .input-box {
+    position: relative;
+    display: block;
+    margin-bottom: 36px;
+}
+
+.quote-one__form .input-box label {
+    color: var(--tanspot-white);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.quote-one__form .input-box input[type="text"],
+.quote-one__form .input-box input[type="email"],
+.quote-one__form .input-box input[type="number"] {
+    position: relative;
+    display: block;
+    height: 55px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(var(--tanspot-white-rgb), .20);
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(var(--tanspot-white-rgb), .40);
+    border-radius: 10px;
+    font-family: var(--tanspot-font);
+}
+
+.quote-one__form .input-box .select-box {
+    width: 100%;
+}
+
+.quote-one__form .input-box .nice-select {
+    position: relative;
+    display: block;
+    height: 55px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(var(--tanspot-white-rgb), .20);
+    color: rgba(var(--tanspot-white-rgb), .40);
+    padding-left: 20px;
+    padding-right: 40px;
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(var(--tanspot-white-rgb), .40);
+    border-radius: 10px;
+    font-family: var(--tanspot-font);
+    float: none;
+}
+
+.quote-one__form .input-box .nice-select:after {
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 1px solid rgba(var(--tanspot-white-rgb), .40);
+    border-right: 1px solid rgba(var(--tanspot-white-rgb), .40);
+    margin-top: 0px;
+    z-index: 10;
+}
+
+.quote-one__form .input-box .nice-select .option {
+    color: var(--tanspot-white);
+}
+
+.quote-redio-box {
+    position: relative;
+    display: block;
+    margin-bottom: 9px;
+}
+
+.quote-redio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.custom-rario {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-rario input[type="radio"] {
+    display: none;
+}
+
+.custom-rario .radio-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 2px;
+    border: 2px solid rgba(var(--tanspot-white-rgb), .40);
+    display: block;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.custom-rario .radio-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--tanspot-white);
+    margin-left: 40px;
+}
+
+.custom-rario .radio-dot::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    border-radius: 3px;
+    background-color: var(--tanspot-base);
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.3s ease-in-out 0s;
+}
+
+.custom-rario input[type="radio"]:checked~.radio-dot::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.custom-rario input[type="radio"]:checked~.radio-dot {
+    border-color: var(--tanspot-base);
+}
+
+.custom-rario input[type="radio"]:checked~.radio-text {
+    color: var(--tanspot-white);
+}
+
+.quote-two__btn {
+    position: relative;
+    display: block;
+    margin-top: 39px;
+}
+
+.quote-two__btn .thm-btn {
+    border: none;
+}
+
+.quote-two__btn .thm-btn::before,
+.quote-two__btn .thm-btn::after {
+    background-color: var(--tanspot-white);
+}
+
+.quote-two__btn .thm-btn:hover {
+    color: var(--tanspot-base);
+}
+
+.quote-two__btn .thm-btn:hover>span {
+    background-color: var(--tanspot-black);
+    color: var(--tanspot-white);
+}
